@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './index.css';
 import Navi from "./components/navi";
 import Body from "./components/body";

@@ -1,4 +1,4 @@
-import react,{useState} from "react";
+import React,{useState} from "react";
 
 const Body = () => {
     const [weapon,setWeapon] = useState(false)
@@ -19,12 +19,15 @@ const Body = () => {
     }
 
 
+    // 80:55 = 70:x
 
+    // x = 55 * y/80
     return (
         <div className="body">
             <div className="body_level1">
                 <div className="showroom">
-                    <img src="./pics/manikin.png" className="manikin" alt="manikin" />
+                    <img src="./pics/manikinman2.png" className="manikin" alt="manikin" />
+                    <img src="./pics/background2.png" className="bakground" alt="manikin" />
                     {
                         hat?<img src="./pics/17hat.png" alt="hat" className="hat" />:""
                     }
@@ -43,7 +46,8 @@ const Body = () => {
                     <span>남자 코디</span>
                 </div>
                 <div className="showroom">
-                    <img src="./pics/manikin.png" className="manikin" alt="manikin" />
+                    <img src="./pics/manikinwoman2.png" className="manikin" alt="manikin" />
+                    {/* <img src="./pics/background2.png" className="bakground" alt="manikin" /> */}
                     {
                         hat?<img src="./pics/17hat.png" alt="hat" className="hat" />:""
                     }
