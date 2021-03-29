@@ -46,8 +46,40 @@ body {
   flex-direction: column;
   margin:0px 40px;
 }
-.showroom > img{
-  height:100px;
+.showroom > img.manikin{
+  height:80px;
+  width:39px;
+  z-index:5;
+}
+.showroom > img.hat{
+  position:absolute;
+  top:-7px;
+  right:14px;
+  z-index:6;
+}
+.showroom > img.cloth{
+  position:absolute;
+  top:43px;
+  right:22px;
+  z-index:6;
+}
+.showroom > img.weapon{
+  position:absolute;
+  top:53px;
+  right:5px;
+  z-index:7;
+}
+.showroom > img.cape{
+  position:absolute;
+  top:40px;
+  right:5px;
+  z-index:5;
+}
+.showroom > img.shoes{
+  position:absolute;
+  top:72px;
+  right:27px;
+  z-index:6;
 }
 .showroom > span{
   display:flex;
