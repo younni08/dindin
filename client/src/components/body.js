@@ -286,10 +286,10 @@ const Body = () => {
             <div className="body_level1" id="getshot">
                 {/* <div id="getshot"></div> */}
                 <div className="showroom">
-                    <img src="./pics/manikinman2.png" className="manikin" alt="manikin" />
                     {
                         back?<img src="./pics/background2.png" className="background" alt="background" />:""
                     }
+                    <img src="./pics/manikinman2.png" className="manikin" alt="manikin" />
                     {
                         parser(label11)
                     }
