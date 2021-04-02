@@ -79,6 +79,7 @@ body {
   width:100%;
   max-width: 400px;
   margin:0px 0px 20px 0px;
+  cursor: pointer;
 }
 .navibar > div:last-child div span{
   display:flex;
@@ -374,7 +375,7 @@ body {
   display:flex;
   width:100%;
   flex-direction: column;
-  margin:20px 0px 0px 0px;
+  margin:50px 0px 0px 0px;
   padding:10px 0px;
   background-color: #ff8da1;
   color:#fff;
@@ -409,7 +410,7 @@ body {
 .backtoggle{
   display:flex;
   width:100%;
-  max-width:300px;
+  max-width:360px;
   justify-content:flex-end;
   align-items:center;
   margin:0px 0px 25px 0px;
@@ -439,7 +440,7 @@ body {
   justify-content:center;
   align-items:center;
   position:relative;
-  margin:0px 5px 0px 0px;
+  margin:0px 20px 0px 0px;
   width:100px;
   height:25px;
   /* background:#278cfd; */

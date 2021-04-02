@@ -19,6 +19,8 @@ const Body = () => {
     const [label61,setLabel61] = useState("")
     const [label62,setLabel62] = useState("")
     const [back,setBack] = useState(false)
+    const [labelback,setLabelback] = useState("")
+    const [labelback1,setLabelback1] = useState(`<img src="./pics/background2.png" alt="hat" class="background" />`)
 
     const onClick1 = () => {
         let check = document.getElementById("id1").classList.contains("hidden")
@@ -58,6 +60,55 @@ const Body = () => {
             document.getElementById("id6").className = "visible"
         }else{
             document.getElementById("id6").className = "hidden"
+        }
+    }
+    const onClick7 = () => {
+        let check = document.getElementById("id7").classList.contains("hidden")
+        if(check===true){
+            document.getElementById("id7").className = "visible"
+        }else{
+            document.getElementById("id7").className = "hidden"
+        }
+    }
+
+    const getback = (e) => {
+        console.log(e.currentTarget.getAttribute("id"))
+        switch(e.currentTarget.getAttribute("id")){
+            case "back1":
+                setLabelback("")
+                setLabelback1(`<img src="./pics/background1.png" alt="hat" class="background" />`)
+                break;
+            case "back2":
+                setLabelback("")
+                setLabelback1(`<img src="./pics/background2.png" alt="hat" class="background" />`)
+                break;
+            case "back3":
+                setLabelback("")
+                setLabelback1(`<img src="./pics/background3.png" alt="hat" class="background" />`)
+                break;
+            case "back4":
+                setLabelback("")
+                setLabelback1(`<img src="./pics/background4.png" alt="hat" class="background" />`)
+                break;
+            case "back5":
+                setLabelback("")
+                setLabelback1(`<img src="./pics/background5.png" alt="hat" class="background" />`)
+                break;
+            case "back6":
+                setLabelback("")
+                setLabelback1(`<img src="./pics/background6.png" alt="hat" class="background" />`)
+                break;
+            case "back7":
+                setLabelback("")
+                setLabelback1(`<img src="./pics/background7.png" alt="hat" class="background" />`)
+                break;
+            case "back8":
+                setLabelback("")
+                setLabelback1(`<img src="./pics/background8.png" alt="hat" class="background" />`)
+                break;
+            default:
+                setLabelback(`소멸의 여로`)
+                setLabelback1(`<img src="./pics/background2.png" alt="hat" class="background" />`)
         }
     }
 
@@ -287,7 +338,7 @@ const Body = () => {
                 {/* <div id="getshot"></div> */}
                 <div className="showroom">
                     {
-                        back?<img src="./pics/background2.png" className="background" alt="background" />:""
+                        back?parser(labelback1):""
                     }
                     <img src="./pics/manikinman2.png" className="manikin" alt="manikin" />
                     {
@@ -510,6 +561,60 @@ const Body = () => {
                                 <span>벗기기</span>
                             </div>
 
+                        </div>
+                    </div>
+                    <li><span>배경</span><span>{labelback}</span></li>
+                    <div>
+                        <span onClick={onClick7}>배경 검색<i className="xi-caret-down-min xi-x"></i></span>
+                        <div className="hidden" id="id7">
+                            <div className="minibox" onClick={getback} id="back1">
+                                <div>
+                                    <img src="./pics/background1.png" alt="dinlabel_17" />
+                                </div>
+                                <span>노틸러스</span>
+                            </div>
+                            <div className="minibox" onClick={getback} id="back2">
+                                <div>
+                                    <img src="./pics/background2.png" alt="dinlabel_19" />
+                                </div>
+                                <span>여로</span>
+                            </div>
+                            <div className="minibox" onClick={getback} id="back3">
+                                <div>
+                                    <img src="./pics/background3.png" alt="dinlabel_21" />
+                                </div>
+                                <span>루디</span>
+                            </div>
+                            <div className="minibox" onClick={getback} id="back4">
+                                <div>
+                                    <img src="./pics/background4.png" alt="dinlabel_21" />
+                                </div>
+                                <span>삐에로</span>
+                            </div>
+                            <div className="minibox" onClick={getback} id="back5">
+                                <div>
+                                    <img src="./pics/background5.png" alt="dinlabel_21" />
+                                </div>
+                                <span>아르카나</span>
+                            </div>
+                            <div className="minibox" onClick={getback} id="back6">
+                                <div>
+                                    <img src="./pics/background6.png" alt="dinlabel_21" />
+                                </div>
+                                <span>엘로딘</span>
+                            </div>
+                            <div className="minibox" onClick={getback} id="back7">
+                                <div>
+                                    <img src="./pics/background7.png" alt="dinlabel_21" />
+                                </div>
+                                <span>리엔</span>
+                            </div>
+                            <div className="minibox" onClick={getback} id="back8">
+                                <div>
+                                    <img src="./pics/background8.png" alt="dinlabel_21" />
+                                </div>
+                                <span>에레브</span>
+                            </div>
                         </div>
                     </div>
                 </ul>
