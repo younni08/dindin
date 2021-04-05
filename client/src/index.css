@@ -137,6 +137,13 @@ body {
   right:27px;
   z-index:6;
 }
+.showroom img.facee{
+  position:absolute;
+  width:23px;
+  top:14px;
+  right:27px;
+  z-index:6;
+}
 .showroom img.face2{
   position:absolute;
   width:29px;
@@ -174,6 +181,12 @@ body {
   position:absolute;
   top:11px;
   right:41px;
+  z-index:6;
+}
+.showroom img.hat20{
+  position:absolute;
+  top:7px;
+  right:44px;
   z-index:6;
 }
 .showroom img.hat21{
@@ -222,6 +235,12 @@ body {
   position:absolute;
   top:-15px;
   right:-5px;
+  z-index:4;
+}
+.showroom img.cape20{
+  position:absolute;
+  top:7px;
+  right:34px;
   z-index:4;
 }
 .showroom img.cape21{
@@ -364,6 +383,11 @@ body {
 }
 .minibox img{
   max-width:60px;
+  /* max-height:40px; */
+  margin:0px 5px;
+}
+.minibox img.bigcape{
+  max-width:40px;
   /* max-height:40px; */
   margin:0px 5px;
 }
