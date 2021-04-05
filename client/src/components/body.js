@@ -3,6 +3,12 @@ import parser from "html-react-parser";
 import html2canvas from 'html2canvas';
 
 const Body = () => {
+    const [manikin1,setManikin1] = useState(`<img src="./pics/멍한 눈.png" className="manikin" alt="manikin" />`)
+    const [manikin2,setManikin2] = useState(`<img src="./pics/졸린 조용눈.png" className="manikin" alt="manikin" />`)
+    const [hair11,sethair1] = useState(`<img src="./pics/포숑.png" alt="cape" class="haire" />`)
+    const [hair21,sethair21] = useState(`<img src="./pics/깜찍 뿔뿔이.png" alt="cape" class="haire" />`)
+    const [hair22,sethair22] = useState(``)
+
     const [label1,setLabel1] = useState("")
     const [label11,setLabel11] = useState("")
     const [label12,setLabel12] = useState("")
@@ -18,6 +24,8 @@ const Body = () => {
     const [label6,setLabel6] = useState("")
     const [label61,setLabel61] = useState("")
     const [label62,setLabel62] = useState("")
+    const [label8,setLabel8] = useState("")
+    const [label9,setLabel9] = useState("")
     const [back,setBack] = useState(false)
     const [labelback,setLabelback] = useState("")
     const [labelback1,setLabelback1] = useState(`<img src="./pics/background2.png" alt="hat" class="background" />`)
@@ -68,6 +76,22 @@ const Body = () => {
             document.getElementById("id7").className = "visible"
         }else{
             document.getElementById("id7").className = "hidden"
+        }
+    }
+    const onClick8 = () => {
+        let check = document.getElementById("id8").classList.contains("hidden")
+        if(check===true){
+            document.getElementById("id8").className = "visible"
+        }else{
+            document.getElementById("id8").className = "hidden"
+        }
+    }
+    const onClick9 = () => {
+        let check = document.getElementById("id9").classList.contains("hidden")
+        if(check===true){
+            document.getElementById("id9").className = "visible"
+        }else{
+            document.getElementById("id9").className = "hidden"
         }
     }
 
@@ -288,6 +312,93 @@ const Body = () => {
         }
     }
 
+    const getFace = (e) => {
+        console.log(e.currentTarget.getAttribute("id"))
+        switch(e.currentTarget.getAttribute("id")){
+            case "face1":
+                setLabel8("루시드")
+                setManikin1(`<img src="./pics/루시드(남).png" alt="cape" class="facee" />`)
+                setManikin2(`<img src="./pics/루시드(여).png" alt="cape" class="facee" />`)
+                break;
+            case "face2":
+                setLabel8("루어")
+                setManikin1(`<img src="./pics/루어(남).png" alt="cape" class="facee" />`)
+                setManikin2(`<img src="./pics/루어(여).png" alt="cape" class="facee" />`)
+                break;
+            case "face3":
+                setLabel8("멍한 눈")
+                setManikin1(`<img src="./pics/멍한 눈.png" alt="cape" class="facee" />`)
+                setManikin2(`<img src="./pics/멍한 눈.png" alt="cape" class="facee" />`)
+                break;
+            case "face4":
+                setLabel8("조용한 눈")
+                setManikin1(`<img src="./pics/조용눈.png" alt="cape" class="facee" />`)
+                setManikin2(`<img src="./pics/조용눈.png" alt="cape" class="facee" />`)
+                break;
+            case "face5":
+                setLabel8("졸린 눈")
+                setManikin1(`<img src="./pics/졸린 눈.png" alt="cape" class="facee" />`)
+                setManikin2(`<img src="./pics/졸린 눈.png" alt="cape" class="facee" />`)
+                break;
+            case "face6":
+                setLabel8("졸린 조용한 눈")
+                setManikin1(`<img src="./pics/졸린 조용눈.png" alt="cape" class="facee" />`)
+                setManikin2(`<img src="./pics/졸린 조용눈.png" alt="cape" class="facee" />`)
+                break;
+            case "face7":
+                setLabel8("차분한 헤헤")
+                setManikin1(`<img src="./pics/차분한 헤헤.png" alt="cape" class="facee" />`)
+                setManikin2(`<img src="./pics/차분한 헤헤.png" alt="cape" class="facee" />`)
+                break;
+            case "face8":
+                setLabel8("차차")
+                setManikin1(`<img src="./pics/차차(남).png" alt="cape" class="facee" />`)
+                setManikin2(`<img src="./pics/차차(여).png" alt="cape" class="facee" />`)
+                break;
+            default:
+                setLabel8(`기본`)
+                setManikin1(`<img src="./pics/manikinman2.png" className="manikin" alt="manikin" />`)
+                setManikin2(`<img src="./pics/manikinwoman2.png" className="manikin" alt="manikin" />`)
+        }
+    }
+
+    const gethair = (e) => {
+        console.log(e.currentTarget.getAttribute("id"))
+        switch(e.currentTarget.getAttribute("id")){
+            case "hair1":
+                setLabel9("깜찍 뿔뿔이")
+                sethair21(`<img src="./pics/깜찍 뿔뿔이.png" alt="cape" class="haire" />`)
+                sethair22(``)
+                break;
+            case "hair2":
+                setLabel9("버블리")
+                sethair21(`<img src="./pics/버블리(앞).png" alt="cape" class="haire" />`)
+                sethair22(`<img src="./pics/버블리(뒤).png" alt="cape" class="haire2" />`)
+                break;
+            case "hair3":
+                setLabel9("블링신비")
+                sethair21(`<img src="./pics/블링신비(앞).png" alt="cape" class="haire" />`)
+                sethair22(`<img src="./pics/블링신비(뒤).png" alt="cape" class="haire2" />`)
+                break;
+            case "hair4":
+                setLabel9("블레이")
+                sethair1(`<img src="./pics/블레이.png" alt="cape" class="haire" />`)
+                break;
+            case "hair5":
+                setLabel9("페르")
+                sethair1(`<img src="./pics/페르.png" alt="cape" class="haire" />`)
+                break;
+            case "hair6":
+                setLabel9("포숑")
+                sethair1(`<img src="./pics/포숑.png" alt="cape" class="haire" />`)
+                break;
+            default:
+                setLabel9(`기본`)
+                sethair1(`<img src="./pics/포숑.png" alt="cape" class="haire" />`)
+                sethair21(`<img src="./pics/깜찍 뿔뿔이.png" alt="cape" class="haire" />`)
+        }
+    }
+
     const handleBackground = () => {
         if(back===true){
             setBack(false)
@@ -340,7 +451,13 @@ const Body = () => {
                     {
                         back?parser(labelback1):""
                     }
-                    <img src="./pics/manikinman2.png" className="manikin" alt="manikin" />
+                    {/* <img src="./pics/manikinman2.png" className="manikin" alt="manikin" /> */}
+                    {
+                        parser(manikin1)
+                    }
+                    {
+                        parser(hair11)
+                    }
                     {
                         parser(label11)
                     }
@@ -359,7 +476,16 @@ const Body = () => {
                     <span>남자 코디</span>
                 </div>
                 <div className="showroom">
-                    <img src="./pics/manikinwoman2.png" className="manikin" alt="manikin" />
+                    {/* <img src="./pics/manikinwoman2.png" className="manikin" alt="manikin" /> */}
+                    {
+                        parser(manikin2)
+                    }
+                    {
+                        parser(hair21)
+                    }
+                    {
+                        parser(hair22)
+                    }
                     {
                         parser(label11)
                     }
@@ -381,6 +507,102 @@ const Body = () => {
             <div className="body_level2">
                 <span>Options</span>
                 <ul>
+                <li><span>헤어</span><span>{label9}</span></li>
+                    <div>
+                        <span onClick={onClick9}>헤어 검색<i className="xi-caret-down-min xi-x"></i></span>
+                        <div className="hidden" id="id9">
+                            <div className="minibox" onClick={gethair} id="hair1">
+                                <div>
+                                    <img src="./pics/깜찍 뿔뿔이.png" alt="dinlabel_16" className="hair" />
+                                </div>
+                                <span>깜찍 뿔뿔이(여)</span>
+                            </div>
+                            <div className="minibox" onClick={gethair} id="hair2">
+                                <div>
+                                    <img src="./pics/버블리(앞).png" alt="dinlabel_17" className="hair"/>
+                                </div>
+                                <span>버블리(여)</span>
+                            </div>
+                            <div className="minibox" onClick={gethair} id="hair3">
+                                <div>
+                                    <img src="./pics/블링신비(앞).png" alt="dinlabel_19" className="hair" />
+                                </div>
+                                <span>블링 신비(여)</span>
+                            </div>
+                            <div className="minibox" onClick={gethair} id="hair4">
+                                <div>
+                                    <img src="./pics/블레이.png" alt="dinlabel_19" className="hair" />
+                                </div>
+                                <span>블레이(남)</span>
+                            </div>
+                            <div className="minibox" onClick={gethair} id="hair5">
+                                <div>
+                                    <img src="./pics/페르.png" alt="dinlabel_19" className="hair" />
+                                </div>
+                                <span>페르(남)</span>
+                            </div>
+                            <div className="minibox" onClick={gethair} id="hair6">
+                                <div>
+                                    <img src="./pics/포숑.png" alt="dinlabel_19" className="hair" />
+                                </div>
+                                <span>포숑(남)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <li><span>성형</span><span>{label8}</span></li>
+                    <div>
+                        <span onClick={onClick8}>성형 검색<i className="xi-caret-down-min xi-x"></i></span>
+                        <div className="hidden" id="id8">
+                            <div className="minibox" onClick={getFace} id="face1">
+                                <div>
+                                    <img src="./pics/루시드(남).png" alt="dinlabel_16" className="face" />
+                                </div>
+                                <span>루시드</span>
+                            </div>
+                            <div className="minibox" onClick={getFace} id="face2">
+                                <div>
+                                    <img src="./pics/루어(남).png" alt="dinlabel_17" className="face"/>
+                                </div>
+                                <span>루어</span>
+                            </div>
+                            <div className="minibox" onClick={getFace} id="face3">
+                                <div>
+                                    <img src="./pics/멍한 눈.png" alt="dinlabel_19" className="face" />
+                                </div>
+                                <span>멍한 눈</span>
+                            </div>
+                            <div className="minibox" onClick={getFace} id="face4">
+                                <div>
+                                    <img src="./pics/조용눈.png" alt="dinlabel_19" className="face" />
+                                </div>
+                                <span>조용한 눈</span>
+                            </div>
+                            <div className="minibox" onClick={getFace} id="face5">
+                                <div>
+                                    <img src="./pics/졸린 눈.png" alt="dinlabel_19" className="face" />
+                                </div>
+                                <span>졸린</span>
+                            </div>
+                            <div className="minibox" onClick={getFace} id="face6">
+                                <div>
+                                    <img src="./pics/졸린 조용눈.png" alt="dinlabel_19" className="face" />
+                                </div>
+                                <span>졸린 조용한 눈</span>
+                            </div>
+                            <div className="minibox" onClick={getFace} id="face7">
+                                <div>
+                                    <img src="./pics/차분한 헤헤.png" alt="dinlabel_19" className="face" />
+                                </div>
+                                <span>차분한 헤헤</span>
+                            </div>
+                            <div className="minibox" onClick={getFace} id="face8">
+                                <div>
+                                    <img src="./pics/차차(남).png" alt="dinlabel_19" className="face" />
+                                </div>
+                                <span>차차</span>
+                            </div>
+                        </div>
+                    </div>
                     <li><span>모자</span><span>{label1}</span></li>
                     <div>
                         <span onClick={onClick1}>모자 검색<i className="xi-caret-down-min xi-x"></i></span>
@@ -625,3 +847,4 @@ const Body = () => {
 }
 
 export default Body;
+
