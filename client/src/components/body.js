@@ -342,43 +342,43 @@ const Body = () => {
         switch(e.currentTarget.getAttribute("id")){
             case "face1":
                 setLabel8("루시드")
-                setManikin1(`<img src="./pics/루시드(남).png" alt="cape" class="facee" />`)
-                setManikin2(`<img src="./pics/루시드(여).png" alt="cape" class="facee" />`)
+                setManikin1(`<img src="./pics/루시드(남).png" alt="cape" class="manikin" />`)
+                setManikin2(`<img src="./pics/루시드(여).png" alt="cape" class="manikin" />`)
                 break;
             case "face2":
                 setLabel8("루어")
-                setManikin1(`<img src="./pics/루어(남).png" alt="cape" class="facee" />`)
-                setManikin2(`<img src="./pics/루어(여).png" alt="cape" class="facee" />`)
+                setManikin1(`<img src="./pics/루어(남).png" alt="cape" class="manikin" />`)
+                setManikin2(`<img src="./pics/루어(여).png" alt="cape" class="manikin" />`)
                 break;
             case "face3":
                 setLabel8("멍한 눈")
-                setManikin1(`<img src="./pics/멍한 눈.png" alt="cape" class="facee" />`)
-                setManikin2(`<img src="./pics/멍한 눈.png" alt="cape" class="facee" />`)
+                setManikin1(`<img src="./pics/멍한 눈.png" alt="cape" class="manikin" />`)
+                setManikin2(`<img src="./pics/멍한 눈.png" alt="cape" class="manikin" />`)
                 break;
             case "face4":
                 setLabel8("조용한 눈")
-                setManikin1(`<img src="./pics/조용눈.png" alt="cape" class="facee" />`)
-                setManikin2(`<img src="./pics/조용눈.png" alt="cape" class="facee" />`)
+                setManikin1(`<img src="./pics/조용눈.png" alt="cape" class="manikin" />`)
+                setManikin2(`<img src="./pics/조용눈.png" alt="cape" class="manikin" />`)
                 break;
             case "face5":
                 setLabel8("졸린 눈")
-                setManikin1(`<img src="./pics/졸린 눈.png" alt="cape" class="facee" />`)
-                setManikin2(`<img src="./pics/졸린 눈.png" alt="cape" class="facee" />`)
+                setManikin1(`<img src="./pics/졸린 눈.png" alt="cape" class="manikin" />`)
+                setManikin2(`<img src="./pics/졸린 눈.png" alt="cape" class="manikin" />`)
                 break;
             case "face6":
                 setLabel8("졸린 조용한 눈")
-                setManikin1(`<img src="./pics/졸린 조용눈.png" alt="cape" class="facee" />`)
-                setManikin2(`<img src="./pics/졸린 조용눈.png" alt="cape" class="facee" />`)
+                setManikin1(`<img src="./pics/졸린 조용눈.png" alt="cape" class="manikin" />`)
+                setManikin2(`<img src="./pics/졸린 조용눈.png" alt="cape" class="manikin" />`)
                 break;
             case "face7":
                 setLabel8("차분한 헤헤")
-                setManikin1(`<img src="./pics/차분한 헤헤.png" alt="cape" class="facee" />`)
-                setManikin2(`<img src="./pics/차분한 헤헤.png" alt="cape" class="facee" />`)
+                setManikin1(`<img src="./pics/차분한 헤헤.png" alt="cape" class="manikin" />`)
+                setManikin2(`<img src="./pics/차분한 헤헤.png" alt="cape" class="manikin" />`)
                 break;
             case "face8":
                 setLabel8("차차")
-                setManikin1(`<img src="./pics/차차(남).png" alt="cape" class="facee" />`)
-                setManikin2(`<img src="./pics/차차(여).png" alt="cape" class="facee" />`)
+                setManikin1(`<img src="./pics/차차(남).png" alt="cape" class="manikin" />`)
+                setManikin2(`<img src="./pics/차차(여).png" alt="cape" class="manikin" />`)
                 break;
             default:
                 setLabel8(`기본`)
