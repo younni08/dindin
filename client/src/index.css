@@ -163,7 +163,7 @@ body {
   /* width:23px;
   top:14px;
   right:27px; */
-  z-index:-1;
+  z-index:1;
 }
 .showroom img.hat{
   position:absolute;
