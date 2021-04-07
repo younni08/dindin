@@ -468,41 +468,65 @@ const Body = () => {
             case "face1":
                 setLabel8("루시드")
                 setManikin1(`<img src="./pics/루시드(남).png" alt="cape" class="manikin" />`)
-                setManikin2(`<img src="./pics/루시드(여).png" alt="cape" class="manikin" />`)
                 break;
             case "face2":
                 setLabel8("루어")
                 setManikin1(`<img src="./pics/루어(남).png" alt="cape" class="manikin" />`)
-                setManikin2(`<img src="./pics/루어(여).png" alt="cape" class="manikin" />`)
                 break;
             case "face3":
                 setLabel8("멍한 눈")
                 setManikin1(`<img src="./pics/멍한 눈.png" alt="cape" class="manikin" />`)
-                setManikin2(`<img src="./pics/멍한 눈.png" alt="cape" class="manikin" />`)
                 break;
             case "face4":
                 setLabel8("조용한 눈")
                 setManikin1(`<img src="./pics/조용눈.png" alt="cape" class="manikin" />`)
-                setManikin2(`<img src="./pics/조용눈.png" alt="cape" class="manikin" />`)
                 break;
             case "face5":
                 setLabel8("졸린 눈")
                 setManikin1(`<img src="./pics/졸린 눈.png" alt="cape" class="manikin" />`)
-                setManikin2(`<img src="./pics/졸린 눈.png" alt="cape" class="manikin" />`)
                 break;
             case "face6":
                 setLabel8("졸린 조용한 눈")
                 setManikin1(`<img src="./pics/졸린 조용눈.png" alt="cape" class="manikin" />`)
-                setManikin2(`<img src="./pics/졸린 조용눈.png" alt="cape" class="manikin" />`)
                 break;
             case "face7":
                 setLabel8("차분한 헤헤")
                 setManikin1(`<img src="./pics/차분한 헤헤.png" alt="cape" class="manikin" />`)
-                setManikin2(`<img src="./pics/차분한 헤헤.png" alt="cape" class="manikin" />`)
                 break;
             case "face8":
                 setLabel8("차차")
                 setManikin1(`<img src="./pics/차차(남).png" alt="cape" class="manikin" />`)
+                break;
+            case "face11":
+                setLabel8("루시드")
+                setManikin2(`<img src="./pics/루시드(여).png" alt="cape" class="manikin" />`)
+                break;
+            case "face21":
+                setLabel8("루어")
+                setManikin2(`<img src="./pics/루어(여).png" alt="cape" class="manikin" />`)
+                break;
+            case "face31":
+                setLabel8("멍한 눈")
+                setManikin2(`<img src="./pics/멍한 눈.png" alt="cape" class="manikin" />`)
+                break;
+            case "face41":
+                setLabel8("조용한 눈")
+                setManikin2(`<img src="./pics/조용눈.png" alt="cape" class="manikin" />`)
+                break;
+            case "face51":
+                setLabel8("졸린 눈")
+                setManikin2(`<img src="./pics/졸린 눈.png" alt="cape" class="manikin" />`)
+                break;
+            case "face61":
+                setLabel8("졸린 조용한 눈")
+                setManikin2(`<img src="./pics/졸린 조용눈.png" alt="cape" class="manikin" />`)
+                break;
+            case "face71":
+                setLabel8("차분한 헤헤")
+                setManikin2(`<img src="./pics/차분한 헤헤.png" alt="cape" class="manikin" />`)
+                break;
+            case "face81":
+                setLabel8("차차")
                 setManikin2(`<img src="./pics/차차(여).png" alt="cape" class="manikin" />`)
                 break;
             default:
@@ -665,37 +689,37 @@ const Body = () => {
                                 <div>
                                     <img src="./pics/깜찍 뿔뿔이.png" alt="dinlabel_16" className="hair" />
                                 </div>
-                                <span>깜찍 뿔뿔이(여)</span>
+                                <span className="face2">깜찍 뿔뿔이(여)</span>
                             </div>
                             <div className="minibox" onClick={gethair} id="hair2">
                                 <div>
                                     <img src="./pics/버블리(앞).png" alt="dinlabel_17" className="hair"/>
                                 </div>
-                                <span>버블리(여)</span>
+                                <span className="face2">버블리(여)</span>
                             </div>
                             <div className="minibox" onClick={gethair} id="hair3">
                                 <div>
                                     <img src="./pics/블링신비(앞).png" alt="dinlabel_19" className="hair" />
                                 </div>
-                                <span>블링 신비(여)</span>
+                                <span className="face2">블링 신비(여)</span>
                             </div>
                             <div className="minibox" onClick={gethair} id="hair4">
                                 <div>
                                     <img src="./pics/블레이.png" alt="dinlabel_19" className="hair" />
                                 </div>
-                                <span>블레이(남)</span>
+                                <span className="face">블레이(남)</span>
                             </div>
                             <div className="minibox" onClick={gethair} id="hair5">
                                 <div>
                                     <img src="./pics/페르.png" alt="dinlabel_19" className="hair" />
                                 </div>
-                                <span>페르(남)</span>
+                                <span className="face">페르(남)</span>
                             </div>
                             <div className="minibox" onClick={gethair} id="hair6">
                                 <div>
                                     <img src="./pics/포숑.png" alt="dinlabel_19" className="hair" />
                                 </div>
-                                <span>포숑(남)</span>
+                                <span className="face">포숑(남)</span>
                             </div>
                         </div>
                     </div>
@@ -707,49 +731,98 @@ const Body = () => {
                                 <div>
                                     <img src="./pics/루시드(남).png" alt="dinlabel_16" className="face" />
                                 </div>
-                                <span>루시드</span>
+                                <span  className="face">루시드(남)</span>
                             </div>
                             <div className="minibox" onClick={getFace} id="face2">
                                 <div>
                                     <img src="./pics/루어(남).png" alt="dinlabel_17" className="face"/>
                                 </div>
-                                <span>루어</span>
+                                <span  className="face">루어(남)</span>
                             </div>
                             <div className="minibox" onClick={getFace} id="face3">
                                 <div>
                                     <img src="./pics/멍한 눈.png" alt="dinlabel_19" className="face" />
                                 </div>
-                                <span>멍한 눈</span>
+                                <span  className="face">멍한 눈(남)</span>
                             </div>
                             <div className="minibox" onClick={getFace} id="face4">
                                 <div>
                                     <img src="./pics/조용눈.png" alt="dinlabel_19" className="face" />
                                 </div>
-                                <span>조용한 눈</span>
+                                <span  className="face">조용한 눈(남)</span>
                             </div>
                             <div className="minibox" onClick={getFace} id="face5">
                                 <div>
                                     <img src="./pics/졸린 눈.png" alt="dinlabel_19" className="face" />
                                 </div>
-                                <span>졸린</span>
+                                <span  className="face">졸린(남)</span>
                             </div>
                             <div className="minibox" onClick={getFace} id="face6">
                                 <div>
                                     <img src="./pics/졸린 조용눈.png" alt="dinlabel_19" className="face" />
                                 </div>
-                                <span>졸린 조용한 눈</span>
+                                <span  className="face">졸린 조용한 눈(남)</span>
                             </div>
                             <div className="minibox" onClick={getFace} id="face7">
                                 <div>
                                     <img src="./pics/차분한 헤헤.png" alt="dinlabel_19" className="face" />
                                 </div>
-                                <span>차분한 헤헤</span>
+                                <span  className="face">차분한 헤헤(남)</span>
                             </div>
                             <div className="minibox" onClick={getFace} id="face8">
                                 <div>
                                     <img src="./pics/차차(남).png" alt="dinlabel_19" className="face" />
                                 </div>
-                                <span>차차</span>
+                                <span  className="face">차차(남)</span>
+                            </div>
+
+                            <div className="minibox" onClick={getFace} id="face11">
+                                <div>
+                                    <img src="./pics/루시드(남).png" alt="dinlabel_16" className="face2" />
+                                </div>
+                                <span  className="face2">루시드(여)</span>
+                            </div>
+                            <div className="minibox" onClick={getFace} id="face21">
+                                <div>
+                                    <img src="./pics/루어(남).png" alt="dinlabel_17" className="face2"/>
+                                </div>
+                                <span  className="face2">루어(여)</span>
+                            </div>
+                            <div className="minibox" onClick={getFace} id="face31">
+                                <div>
+                                    <img src="./pics/멍한 눈.png" alt="dinlabel_19" className="face2" />
+                                </div>
+                                <span  className="face2">멍한 눈(여)</span>
+                            </div>
+                            <div className="minibox" onClick={getFace} id="face41">
+                                <div>
+                                    <img src="./pics/조용눈.png" alt="dinlabel_19" className="face2" />
+                                </div>
+                                <span  className="face2">조용한 눈(여)</span>
+                            </div>
+                            <div className="minibox" onClick={getFace} id="face51">
+                                <div>
+                                    <img src="./pics/졸린 눈.png" alt="dinlabel_19" className="face2" />
+                                </div>
+                                <span  className="face2">졸린(여)</span>
+                            </div>
+                            <div className="minibox" onClick={getFace} id="face61">
+                                <div>
+                                    <img src="./pics/졸린 조용눈.png" alt="dinlabel_19" className="face2" />
+                                </div>
+                                <span  className="face2">졸린 조용한 눈(여)</span>
+                            </div>
+                            <div className="minibox" onClick={getFace} id="face71">
+                                <div>
+                                    <img src="./pics/차분한 헤헤.png" alt="dinlabel_19" className="face2" />
+                                </div>
+                                <span  className="face2">차분한 헤헤(여)</span>
+                            </div>
+                            <div className="minibox" onClick={getFace} id="face81">
+                                <div>
+                                    <img src="./pics/차차(남).png" alt="dinlabel_19" className="face2" />
+                                </div>
+                                <span  className="face2">차차(여)</span>
                             </div>
                         </div>
                     </div>

@@ -415,10 +415,11 @@ body {
   /* max-height:40px; */
   margin:0px 5px;
 }
-.minibox img.face{
-  max-width:80px;
-  /* max-height:40px; */
-  margin:0px 5px;
+.minibox span.face{
+  color:#278cfd;
+}
+.minibox span.face2{
+  color:#f2736f;
 }
 .minibox img.hair{
   max-width:80px;
