@@ -164,15 +164,30 @@ const Body = () => {
                 setLabel11(`<img src="./pics/9hat1.png" alt="hat" class="hat16" />`)
                 setLabel12(`<img src="./pics/9hat2.png" alt="hat" class="hat16" />`)
                 break;
+            case "15hat":
+                setLabel1("딘라벨 15기")
+                setLabel11(`<img src="./pics/15hat1.png" alt="hat" class="hat16" />`)
+                setLabel12(`<img src="./pics/15hat2.png" alt="hat" class="hat16" />`)
+                break;
             case "16hat":
                 setLabel1("메이플 16주년")
-                setLabel11(`<img src="./pics/16hat.png" alt="hat" class="hat16" />`)
-                setLabel12(`<img src="./pics/16hat.png" alt="hat" class="hat16" />`)
+                setLabel11(`<img src="./pics/16hat1.png" alt="hat" class="hat16" />`)
+                setLabel12(`<img src="./pics/16hat2.png" alt="hat" class="hat16" />`)
+                break;
+            case "166hat":
+                setLabel1("딘라벨 16기")
+                setLabel11(`<img src="./pics/166hat1.png" alt="hat" class="hat166" />`)
+                setLabel12(`<img src="./pics/166hat2.png" alt="hat" class="hat1666" />`)
                 break;
             case "17hat":
                 setLabel1("딘라벨 17기")
                 setLabel11(`<img src="./pics/17hat.png" alt="hat" class="hat" />`)
                 setLabel12(`<img src="./pics/17hat.png" alt="hat" class="hat" />`)
+                break;
+            case "18hat":
+                setLabel1("딘라벨 18기")
+                setLabel11(`<img src="./pics/18hat1.png" alt="hat" class="hat16" />`)
+                setLabel12(`<img src="./pics/18hat2.png" alt="hat" class="hat16" />`)
                 break;
             case "19hat":
                 setLabel1("딘라벨 19기")
@@ -188,6 +203,11 @@ const Body = () => {
                 setLabel1("딘라벨 21기")
                 setLabel11(`<img src="./pics/21hat1.png" alt="hat" class="hat21" />`)
                 setLabel12(`<img src="./pics/21hat2.png" alt="hat" class="hat21" />`)
+                break;
+            case "23hat":
+                setLabel1("딘라벨 23기")
+                setLabel11(`<img src="./pics/23hat1.png" alt="hat" class="hat16" />`)
+                setLabel12(`<img src="./pics/23hat2.png" alt="hat" class="hat16" />`)
                 break;
             case "hat":
                 setLabel1("")
@@ -229,15 +249,30 @@ const Body = () => {
                 setLabel21(`<img src="./pics/9weapon1.png" alt="weapon" class="weapon9" />`)
                 setLabel22(`<img src="./pics/9weapon2.png" alt="weapon" class="weapon9" />`)
                 break;
+            case "15weapon":
+                setLabel2("딘라벨 15기")
+                setLabel21(`<img src="./pics/15weapon1.png" alt="weapon" class="weapon15" />`)
+                setLabel22(`<img src="./pics/15weapon2.png" alt="weapon" class="weapon15" />`)
+                break;
             case "16weapon":
                 setLabel2("메이플 16주년")
                 setLabel21(`<img src="./pics/16weapon.png" alt="weapon" class="weapon2" />`)
                 setLabel22(`<img src="./pics/16weapon.png" alt="weapon" class="weapon2" />`)
                 break;
+            case "166weapon":
+                setLabel2("딘라벨 16기")
+                setLabel21(`<img src="./pics/166weapon1.png" alt="weapon" class="weapon2" />`)
+                setLabel22(`<img src="./pics/166weapon2.png" alt="weapon" class="weapon2" />`)
+                break;
             case "17weapon":
                 setLabel2("딘라벨 17기")
                 setLabel21(`<img src="./pics/17weapon.png" alt="weapon" class="weapon2" />`)
                 setLabel22(`<img src="./pics/17weapon.png" alt="weapon" class="weapon2" />`)
+                break;
+            case "18weapon":
+                setLabel2("딘라벨 18기")
+                setLabel21(`<img src="./pics/18weapon1.png" alt="weapon" class="weapon2" />`)
+                setLabel22(`<img src="./pics/18weapon2.png" alt="weapon" class="weapon2" />`)
                 break;
             case "19weapon":
                 setLabel2("딘라벨 19기")
@@ -253,6 +288,11 @@ const Body = () => {
                 setLabel2("딘라벨 21기")
                 setLabel21(`<img src="./pics/21weapon.png" alt="weapon" class="weapon2" />`)
                 setLabel22(`<img src="./pics/21weapon.png" alt="weapon" class="weapon2" />`)
+                break;
+            case "23weapon":
+                setLabel2("딘라벨 23기")
+                setLabel21(`<img src="./pics/23weapon1.png" alt="weapon" class="weapon2" />`)
+                setLabel22(`<img src="./pics/23weapon2.png" alt="weapon" class="weapon2" />`)
                 break;
             case "weapon":
                 setLabel2("")
@@ -295,15 +335,30 @@ const Body = () => {
                 setLabel31(`<img src="./pics/9cloth1.png" alt="cloth" class="cloth2" />`)
                 setLabel32(`<img src="./pics/9cloth2.png" alt="cloth" class="cloth2" />`)
                 break;
+            case "15cloth":
+                setLabel3("딘라벨 15기")
+                setLabel31(`<img src="./pics/15cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/15cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
             case "16cloth":
                 setLabel3("메이플 16주년")
                 setLabel31(`<img src="./pics/16cloth1.png" alt="cloth" class="cloth2" />`)
                 setLabel32(`<img src="./pics/16cloth2.png" alt="cloth" class="cloth2" />`)
                 break;
+            case "166cloth":
+                setLabel3("딘라벨 16기")
+                setLabel31(`<img src="./pics/166cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/166cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
             case "17cloth":
                 setLabel3("딘라벨 17기")
                 setLabel31(`<img src="./pics/17cloth1.png" alt="cloth" class="cloth" />`)
                 setLabel32(`<img src="./pics/17cloth2.png" alt="cloth" class="cloth" />`)
+                break;
+            case "18cloth":
+                setLabel3("딘라벨 18기")
+                setLabel31(`<img src="./pics/18cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/18cloth2.png" alt="cloth" class="cloth2" />`)
                 break;
             case "19cloth":
                 setLabel3("딘라벨 19기")
@@ -319,6 +374,11 @@ const Body = () => {
                 setLabel3("딘라벨 21기")
                 setLabel31(`<img src="./pics/21cloth1.png" alt="cloth" class="cloth2" />`)
                 setLabel32(`<img src="./pics/21cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
+            case "23cloth":
+                setLabel3("딘라벨 23기")
+                setLabel31(`<img src="./pics/23cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/23cloth2.png" alt="cloth" class="cloth2" />`)
                 break;
             case "cloth":
                 setLabel3("")
@@ -355,20 +415,40 @@ const Body = () => {
                 setLabel51(`<img src="./pics/8shoes1.png" alt="shoes" class="shoes2" />`)
                 setLabel52(`<img src="./pics/8shoes2.png" alt="shoes" class="shoes2" />`)
                 break;
+            case "15shoes":
+                setLabel5("딘라벨 15기")
+                setLabel51(`<img src="./pics/15shoes1.png" alt="shoes" class="shoes2" />`)
+                setLabel52(`<img src="./pics/15shoes2.png" alt="shoes" class="shoes2" />`)
+                break;
             case "9shoes":
                 setLabel5("딘라벨 9기")
                 setLabel51(`<img src="./pics/9shoes1.png" alt="shoes" class="shoes2" />`)
                 setLabel52(`<img src="./pics/9shoes2.png" alt="shoes" class="shoes2" />`)
+                break;
+            case "15shoes":
+                setLabel5("딘라벨 15기")
+                setLabel51(`<img src="./pics/15shoes1.png" alt="shoes" class="shoes2" />`)
+                setLabel52(`<img src="./pics/15shoes2.png" alt="shoes" class="shoes2" />`)
                 break;
             case "16shoes":
                 setLabel5("메이플 16주년")
                 setLabel51(`<img src="./pics/16shoes.png" alt="shoes" class="shoes2" />`)
                 setLabel52(`<img src="./pics/16shoes.png" alt="shoes" class="shoes2" />`)
                 break;
+            case "166shoes":
+                setLabel5("딘라벨 16기")
+                setLabel51(``)
+                setLabel52(``)
+                break;
             case "17shoes":
                 setLabel5("딘라벨 17기")
                 setLabel51(`<img src="./pics/17shoes.png" alt="shoes" class="shoes" />`)
                 setLabel52(`<img src="./pics/17shoes.png" alt="shoes" class="shoes" />`)
+                break;
+            case "18shoes":
+                setLabel5("딘라벨 18기")
+                setLabel51(`<img src="./pics/18shoes1.png" alt="shoes" />`)
+                setLabel52(`<img src="./pics/18shoes2.png" alt="shoes" />`)
                 break;
             case "19shoes":
                 setLabel5("딘라벨 19기")
@@ -384,6 +464,11 @@ const Body = () => {
                 setLabel5("딘라벨 21기")
                 setLabel51(``)
                 setLabel52(``)
+                break;
+            case "23shoes":
+                setLabel5("딘라벨 23기")
+                setLabel51(`<img src="./pics/23shoes1.png" alt="shoes" class="shoes2" />`)
+                setLabel52(`<img src="./pics/23shoes2.png" alt="shoes" class="shoes2" />`)
                 break;
             case "shoes":
                 setLabel5("")
@@ -425,15 +510,30 @@ const Body = () => {
                 setLabel61(`<img src="./pics/9cape.png" alt="cape" class="cape19" />`)
                 setLabel62(`<img src="./pics/9cape.png" alt="cape" class="cape19" />`)
                 break;
+            case "15cape":
+                setLabel6("딘라벨 15기")
+                setLabel61(``)
+                setLabel62(``)
+                break;
             case "16cape":
                 setLabel6("메이플 16주년")
                 setLabel61(`<img src="./pics/16cape.png" alt="cape" class="cape16" />`)
                 setLabel62(`<img src="./pics/16cape.png" alt="cape" class="cape16" />`)
                 break;
+            case "166cape":
+                setLabel6("메이플 16주년")
+                setLabel61(`<img src="./pics/166cape.png" alt="cape" class="cape166" />`)
+                setLabel62(`<img src="./pics/166cape.png" alt="cape" class="cape166" />`)
+                break;
             case "17cape":
                 setLabel6("딘라벨 17기")
-                setLabel61(`<img src="./pics/17cape.png" alt="cape" class="cape" />`)
-                setLabel62(`<img src="./pics/17cape.png" alt="cape" class="cape" />`)
+                setLabel61(`<img src="./pics/17cape.png" alt="cape" class="cape16" />`)
+                setLabel62(`<img src="./pics/17cape.png" alt="cape" class="cape16" />`)
+                break;
+            case "18cape":
+                setLabel6("딘라벨 18기")
+                setLabel61(`<img src="./pics/18cape1.png" alt="cape" class="cape" />`)
+                setLabel62(`<img src="./pics/18cape2.png" alt="cape" class="cape" />`)
                 break;
             case "19cape":
                 setLabel6("딘라벨 19기")
@@ -449,6 +549,11 @@ const Body = () => {
                 setLabel6("딘라벨 21기")
                 setLabel61(`<img src="./pics/21cape1.png" alt="cape" class="cape21" />`)
                 setLabel62(`<img src="./pics/21cape2.png" alt="cape" class="cape21" />`)
+                break;
+            case "23cape":
+                setLabel6("딘라벨 23기")
+                setLabel61(``)
+                setLabel62(``)
                 break;
             case "cape":
                 setLabel6("")
@@ -916,17 +1021,35 @@ const Body = () => {
                                 </div>
                                 <span>9기</span>
                             </div>
+                            <div className="minibox" onClick={getId1} id="15hat">
+                                <div>
+                                    <img src="./pics/15hat1.png" alt="dinlabel_15" className="hat" />
+                                </div>
+                                <span>15기</span>
+                            </div>
                             <div className="minibox" onClick={getId1} id="16hat">
                                 <div>
                                     <img src="./pics/16hat.png" alt="dinlabel_16" className="hat" />
                                 </div>
                                 <span>16주년</span>
                             </div>
+                            <div className="minibox" onClick={getId1} id="166hat">
+                                <div>
+                                    <img src="./pics/166hat1.png" alt="dinlabel_166" className="hat" />
+                                </div>
+                                <span>16기</span>
+                            </div>
                             <div className="minibox" onClick={getId1} id="17hat">
                                 <div>
                                     <img src="./pics/17hat.png" alt="dinlabel_17" />
                                 </div>
                                 <span>17기</span>
+                            </div>
+                            <div className="minibox" onClick={getId1} id="18hat">
+                                <div>
+                                    <img src="./pics/18hat1.png" alt="dinlabel_18" className="hat" />
+                                </div>
+                                <span>18기</span>
                             </div>
                             <div className="minibox" onClick={getId1} id="19hat">
                                 <div>
@@ -943,9 +1066,14 @@ const Body = () => {
                             <div className="minibox" onClick={getId1} id="21hat">
                                 <div>
                                     <img src="./pics/21hat1.png" alt="dinlabel_21" />
-                                    {/* <img src="./pics/21hat2.png" alt="dinlabel_21" /> */}
                                 </div>
                                 <span>21기</span>
+                            </div>
+                            <div className="minibox" onClick={getId1} id="23hat">
+                                <div>
+                                    <img src="./pics/23hat1.png" alt="dinlabel_23" className="hat" />
+                                </div>
+                                <span>23기</span>
                             </div>
                             <div className="minibox" onClick={getId1} id="hat">
                                 <div>
@@ -988,17 +1116,35 @@ const Body = () => {
                                 </div>
                                 <span>9기</span>
                             </div>
+                            <div className="minibox" onClick={getId2} id="15weapon">
+                                <div>
+                                    <img src="./pics/15weapon1.png" alt="dinlabel_15"/>
+                                </div>
+                                <span>15기</span>
+                            </div>
                             <div className="minibox" onClick={getId2} id="16weapon">
                                 <div>
                                     <img src="./pics/16weapon.png" alt="dinlabel_16" className="small" />
                                 </div>
                                 <span>16주년</span>
                             </div>
+                            <div className="minibox" onClick={getId2} id="166weapon">
+                                <div>
+                                    <img src="./pics/166weapon1.png" alt="dinlabel_166" className="small" />
+                                </div>
+                                <span>16기</span>
+                            </div>
                             <div className="minibox" onClick={getId2} id="17weapon">
                                 <div>
                                     <img src="./pics/17weapon.png" alt="dinlabel_17" className="small"  />
                                 </div>
                                 <span>17기</span>
+                            </div>
+                            <div className="minibox" onClick={getId2} id="18weapon">
+                                <div>
+                                    <img src="./pics/18weapon1.png" alt="dinlabel_18" className="small"  />
+                                </div>
+                                <span>18기</span>
                             </div>
                             <div className="minibox" onClick={getId2} id="19weapon">
                                 <div>
@@ -1017,6 +1163,12 @@ const Body = () => {
                                     <img src="./pics/21weapon.png" alt="dinlabel_21" className="small" />
                                 </div>
                                 <span>21기</span>
+                            </div>
+                            <div className="minibox" onClick={getId2} id="23weapon">
+                                <div>
+                                    <img src="./pics/23weapon1.png" alt="dinlabel_23" className="small" />
+                                </div>
+                                <span>23기</span>
                             </div>
                             <div className="minibox" onClick={getId2} id="weapon">
                                 <div>
@@ -1064,6 +1216,13 @@ const Body = () => {
                                 </div>
                                 <span>9기</span>
                             </div>
+                            <div className="minibox" onClick={getId3} id="15cloth">
+                                <div>
+                                    <img src="./pics/15cloth1.png" alt="dinlabel_15" className="two" />
+                                    <img src="./pics/15cloth2.png" alt="dinlabel_15" className="two" />
+                                </div>
+                                <span>15기</span>
+                            </div>
                             <div className="minibox" onClick={getId3} id="16cloth">
                                 <div>
                                     <img src="./pics/16cloth1.png" alt="dinlabel_16" className="two" />
@@ -1071,12 +1230,26 @@ const Body = () => {
                                 </div>
                                 <span>16주년</span>
                             </div>
+                            <div className="minibox" onClick={getId3} id="166cloth">
+                                <div>
+                                    <img src="./pics/166cloth1.png" alt="dinlabel_166" className="two" />
+                                    <img src="./pics/166cloth2.png" alt="dinlabel_166" className="two" />
+                                </div>
+                                <span>16기</span>
+                            </div>
                             <div className="minibox" onClick={getId3} id="17cloth">
                                 <div>
                                     <img src="./pics/17cloth1.png" alt="dinlabel_17" />
                                     <img src="./pics/17cloth2.png" alt="dinlabel_17" />
                                 </div>
                                 <span>17기</span>
+                            </div>
+                            <div className="minibox" onClick={getId3} id="18cloth">
+                                <div>
+                                    <img src="./pics/18cloth1.png" alt="dinlabel_18" className="two" />
+                                    <img src="./pics/18cloth2.png" alt="dinlabel_18" className="two" />
+                                </div>
+                                <span>18기</span>
                             </div>
                             <div className="minibox" onClick={getId3} id="19cloth">
                                 <div>
@@ -1098,6 +1271,13 @@ const Body = () => {
                                     <img src="./pics/21cloth2.png" alt="dinlabel_21" className="two" />
                                 </div>
                                 <span>21기</span>
+                            </div>
+                            <div className="minibox" onClick={getId3} id="23cloth">
+                                <div>
+                                    <img src="./pics/23cloth1.png" alt="dinlabel_23" className="two" />
+                                    <img src="./pics/23cloth2.png" alt="dinlabel_23" className="two" />
+                                </div>
+                                <span>23기</span>
                             </div>
                             <div className="minibox" onClick={getId3} id="cloth">
                                 <div>
@@ -1140,17 +1320,35 @@ const Body = () => {
                                 </div>
                                 <span>9기</span>
                             </div>
+                            <div className="minibox" onClick={getId5} id="15shoes">
+                                <div>
+                                    <img src="./pics/15shoes1.png" alt="dinlabel_16" className="small" />
+                                </div>
+                                <span>15기 (얼장)</span>
+                            </div>
                             <div className="minibox" onClick={getId5} id="16shoes">
                                 <div>
                                     <img src="./pics/16shoes.png" alt="dinlabel_16" className="small" />
                                 </div>
                                 <span>16주년</span>
                             </div>
+                            <div className="minibox" onClick={getId5} id="166shoes">
+                                <div>
+                                    없어요
+                                </div>
+                                <span>16기</span>
+                            </div>
                             <div className="minibox" onClick={getId5} id="17shoes">
                                 <div>
                                     <img src="./pics/17shoes.png" alt="dinlabel_17" />
                                 </div>
                                 <span>17기</span>
+                            </div>
+                            <div className="minibox" onClick={getId5} id="18shoes">
+                                <div>
+                                    <img src="./pics/18shoes1.png" alt="dinlabel_18" />
+                                </div>
+                                <span>18기</span>
                             </div>
                             <div className="minibox" onClick={getId5} id="19shoes">
                                 <div>
@@ -1169,6 +1367,12 @@ const Body = () => {
                                     없어요
                                 </div>
                                 <span>21기</span>
+                            </div>
+                            <div className="minibox" onClick={getId5} id="23shoes">
+                                <div>
+                                    <img src="./pics/23shoes1.png" alt="dinlabel_23" />
+                                </div>
+                                <span>23기</span>
                             </div>
                             <div className="minibox" onClick={getId5} id="shoes">
                                 <div>
@@ -1212,17 +1416,35 @@ const Body = () => {
                                 </div>
                                 <span>9기</span>
                             </div>
+                            <div className="minibox" onClick={getId6} id="15cape">
+                                <div>
+                                    없어요
+                                </div>
+                                <span>15기</span>
+                            </div>
                             <div className="minibox" onClick={getId6} id="16cape">
                                 <div>
                                     <img src="./pics/16cape.png" alt="dinlabel_16" />
                                 </div>
                                 <span>16주년</span>
                             </div>
+                            <div className="minibox" onClick={getId6} id="166cape">
+                                <div>
+                                    <img src="./pics/166cape.png" alt="dinlabel_16" />
+                                </div>
+                                <span>16기</span>
+                            </div>
                             <div className="minibox" onClick={getId6} id="17cape">
                                 <div>
                                     <img src="./pics/17cape.png" alt="dinlabel_17" />
                                 </div>
                                 <span>17기</span>
+                            </div>
+                            <div className="minibox" onClick={getId6} id="18cape">
+                                <div>
+                                    <img src="./pics/18cape1.png" alt="dinlabel_18" />
+                                </div>
+                                <span>18기</span>
                             </div>
                             <div className="minibox" onClick={getId6} id="19cape">
                                 <div>
@@ -1241,6 +1463,12 @@ const Body = () => {
                                     <img src="./pics/21cape.png" alt="dinlabel_21" />
                                 </div>
                                 <span>21기</span>
+                            </div>
+                            <div className="minibox" onClick={getId6} id="23cape">
+                                <div>
+                                    없어요
+                                </div>
+                                <span>23기</span>
                             </div>
                             <div className="minibox" onClick={getId6} id="cape">
                                 <div>
