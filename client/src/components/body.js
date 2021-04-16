@@ -171,8 +171,8 @@ const Body = () => {
                 break;
             case "16hat":
                 setLabel1("메이플 16주년")
-                setLabel11(`<img src="./pics/16hat1.png" alt="hat" class="hat16" />`)
-                setLabel12(`<img src="./pics/16hat2.png" alt="hat" class="hat16" />`)
+                setLabel11(`<img src="./pics/16hat.png" alt="hat" class="hat16" />`)
+                setLabel12(`<img src="./pics/16hat.png" alt="hat" class="hat16" />`)
                 break;
             case "166hat":
                 setLabel1("딘라벨 16기")
@@ -415,11 +415,6 @@ const Body = () => {
                 setLabel51(`<img src="./pics/8shoes1.png" alt="shoes" class="shoes2" />`)
                 setLabel52(`<img src="./pics/8shoes2.png" alt="shoes" class="shoes2" />`)
                 break;
-            case "15shoes":
-                setLabel5("딘라벨 15기")
-                setLabel51(`<img src="./pics/15shoes1.png" alt="shoes" class="shoes2" />`)
-                setLabel52(`<img src="./pics/15shoes2.png" alt="shoes" class="shoes2" />`)
-                break;
             case "9shoes":
                 setLabel5("딘라벨 9기")
                 setLabel51(`<img src="./pics/9shoes1.png" alt="shoes" class="shoes2" />`)
@@ -447,8 +442,8 @@ const Body = () => {
                 break;
             case "18shoes":
                 setLabel5("딘라벨 18기")
-                setLabel51(`<img src="./pics/18shoes1.png" alt="shoes" />`)
-                setLabel52(`<img src="./pics/18shoes2.png" alt="shoes" />`)
+                setLabel51(`<img src="./pics/18shoes1.png" alt="shoes" class="shoes2" />`)
+                setLabel52(`<img src="./pics/18shoes2.png" alt="shoes" class="shoes2" />`)
                 break;
             case "19shoes":
                 setLabel5("딘라벨 19기")
@@ -527,13 +522,13 @@ const Body = () => {
                 break;
             case "17cape":
                 setLabel6("딘라벨 17기")
-                setLabel61(`<img src="./pics/17cape.png" alt="cape" class="cape16" />`)
-                setLabel62(`<img src="./pics/17cape.png" alt="cape" class="cape16" />`)
+                setLabel61(`<img src="./pics/17cape.png" alt="cape" class="cape" />`)
+                setLabel62(`<img src="./pics/17cape.png" alt="cape" class="cape" />`)
                 break;
             case "18cape":
                 setLabel6("딘라벨 18기")
-                setLabel61(`<img src="./pics/18cape1.png" alt="cape" class="cape" />`)
-                setLabel62(`<img src="./pics/18cape2.png" alt="cape" class="cape" />`)
+                setLabel61(`<img src="./pics/18cape1.png" alt="cape" class="cape18" />`)
+                setLabel62(`<img src="./pics/18cape2.png" alt="cape" class="cape18" />`)
                 break;
             case "19cape":
                 setLabel6("딘라벨 19기")
@@ -678,6 +673,10 @@ const Body = () => {
         }
     }
 
+    const setHair = (e) => {
+
+    }
+
     const handleBackground = () => {
         if(back===true){
             setBack(false)
@@ -686,32 +685,34 @@ const Body = () => {
         }
     }
 
-    const saveimage1 = () => {
-        document.getElementById("id1").className = "hidden";
-        document.getElementById("id2").className = "hidden";
-        document.getElementById("id3").className = "hidden";
-        document.getElementById("id5").className = "hidden";
-        document.getElementById("id6").className = "hidden";
-        html2canvas(document.getElementById("getshot")).then(canvas => {
-            console.log(canvas);
-            let dataurl = canvas.toDataURL('image/png');
-            let blobBin = atob(dataurl.split(',')[1]);
-            let array = [];
-            for(let i = 0; i < blobBin.length; i++) {
-                array.push(blobBin.charCodeAt(i));
-            }
-            let returnfile=new Blob([new Uint8Array(array)], {type: 'image/png'});
-            console.log(returnfile)
-            // download
-            const url = window.URL.createObjectURL(returnfile)
-            const a = document.createElement("a")
-            a.href = url
-            a.download = `딘라벨.png`
-            a.click()
-            a.remove()
-            window.URL.revokeObjectURL(url);
-        })
-    }
+    // const saveimage1 = () => {
+    //     document.getElementById("id1").className = "hidden";
+    //     document.getElementById("id2").className = "hidden";
+    //     document.getElementById("id3").className = "hidden";
+    //     document.getElementById("id5").className = "hidden";
+    //     document.getElementById("id6").className = "hidden";
+    //     document.getElementById("id8").className = "hidden";
+    //     document.getElementById("id9").className = "hidden";
+    //     html2canvas(document.getElementById("getshot")).then(canvas => {
+    //         console.log(canvas);
+    //         let dataurl = canvas.toDataURL('image/png');
+    //         let blobBin = atob(dataurl.split(',')[1]);
+    //         let array = [];
+    //         for(let i = 0; i < blobBin.length; i++) {
+    //             array.push(blobBin.charCodeAt(i));
+    //         }
+    //         let returnfile=new Blob([new Uint8Array(array)], {type: 'image/png'});
+    //         console.log(returnfile)
+    //         // download
+    //         const url = window.URL.createObjectURL(returnfile)
+    //         const a = document.createElement("a")
+    //         a.href = url
+    //         a.download = `딘라벨.png`
+    //         a.click()
+    //         a.remove()
+    //         window.URL.revokeObjectURL(url);
+    //     })
+    // }
 
     const onClick = () => {
         let check = document.getElementById("navi_id").classList.contains("hidden")
@@ -732,6 +733,410 @@ const Body = () => {
 
     const goto3 = () => {
         window.location.href="https://blog.naver.com/nj622";
+    }
+
+    const getrandom = () => {
+        // hair
+        let random1 = Math.floor(Math.random() * 3) + 1
+        let random2 = Math.floor(Math.random() * 3) + 1
+        // face
+        let random3 = Math.floor(Math.random() * 8) + 1
+        let random4 = Math.floor(Math.random() * 8) + 1
+        // hat 14
+        let random5 = Math.floor(Math.random() * 14) + 1
+        console.log(random5)
+        switch(random5){
+            case 1:
+                setLabel1("딘라벨 2기")
+                setLabel11(`<img src="./pics/2hat.png" alt="hat" class="hat2" />`)
+                setLabel12(`<img src="./pics/2hat.png" alt="hat" class="hat2" />`)
+                break;
+            case 2:
+                setLabel1("딘라벨 3기")
+                setLabel11(`<img src="./pics/3hat.png" alt="hat" class="hat16" />`)
+                setLabel12(`<img src="./pics/3hat.png" alt="hat" class="hat16" />`)
+                break;
+            case 3:
+                setLabel1("딘라벨 4기")
+                setLabel11(`<img src="./pics/4hat.png" alt="hat" class="hat4" />`)
+                setLabel12(`<img src="./pics/4hat.png" alt="hat" class="hat4" />`)
+                break;
+            case 4:
+                setLabel1("딘라벨 8기")
+                setLabel11(`<img src="./pics/8hat1.png" alt="hat" class="hat16" />`)
+                setLabel12(`<img src="./pics/8hat2.png" alt="hat" class="hat16" />`)
+                break;
+            case 5:
+                setLabel1("딘라벨 9기")
+                setLabel11(`<img src="./pics/9hat1.png" alt="hat" class="hat16" />`)
+                setLabel12(`<img src="./pics/9hat2.png" alt="hat" class="hat16" />`)
+                break;
+            case 6:
+                setLabel1("딘라벨 15기")
+                setLabel11(`<img src="./pics/15hat1.png" alt="hat" class="hat16" />`)
+                setLabel12(`<img src="./pics/15hat2.png" alt="hat" class="hat16" />`)
+                break;
+            case 7:
+                setLabel1("메이플 16주년")
+                setLabel11(`<img src="./pics/16hat.png" alt="hat" class="hat16" />`)
+                setLabel12(`<img src="./pics/16hat.png" alt="hat" class="hat16" />`)
+                break;
+            case 8:
+                setLabel1("딘라벨 16기")
+                setLabel11(`<img src="./pics/166hat1.png" alt="hat" class="hat166" />`)
+                setLabel12(`<img src="./pics/166hat2.png" alt="hat" class="hat1666" />`)
+                break;
+            case 9:
+                setLabel1("딘라벨 17기")
+                setLabel11(`<img src="./pics/17hat.png" alt="hat" class="hat" />`)
+                setLabel12(`<img src="./pics/17hat.png" alt="hat" class="hat" />`)
+                break;
+            case 10:
+                setLabel1("딘라벨 18기")
+                setLabel11(`<img src="./pics/18hat1.png" alt="hat" class="hat16" />`)
+                setLabel12(`<img src="./pics/18hat2.png" alt="hat" class="hat16" />`)
+                break;
+            case 11:
+                setLabel1("딘라벨 19기")
+                setLabel11(`<img src="./pics/19hat.png" alt="hat" class="hat19" />`)
+                setLabel12(`<img src="./pics/19hat.png" alt="hat" class="hat19" />`)
+                break;
+            case 12:
+                setLabel1("딘라벨 20기")
+                setLabel11(`<img src="./pics/20hat1.png" alt="hat" class="hat20" />`)
+                setLabel12(`<img src="./pics/20hat2.png" alt="hat" class="hat20" />`)
+                break;
+            case 13:
+                setLabel1("딘라벨 21기")
+                setLabel11(`<img src="./pics/21hat1.png" alt="hat" class="hat21" />`)
+                setLabel12(`<img src="./pics/21hat2.png" alt="hat" class="hat21" />`)
+                break;
+            case 14:
+                setLabel1("딘라벨 23기")
+                setLabel11(`<img src="./pics/23hat1.png" alt="hat" class="hat16" />`)
+                setLabel12(`<img src="./pics/23hat2.png" alt="hat" class="hat16" />`)
+                break;
+            default:
+                setLabel1(``)
+                setLabel11(``)
+                setLabel12(``)
+        }
+        // weapon 14
+        let random6 = Math.floor(Math.random() * 14) + 1
+        console.log(random6)
+        switch(random6){
+            case 1:
+                setLabel2("딘라벨 2기")
+                setLabel21(`<img src="./pics/2weapon.png" alt="weapon" class="weapon2" />`)
+                setLabel22(`<img src="./pics/2weapon.png" alt="weapon" class="weapon2" />`)
+                break;
+            case 2:
+                setLabel2("딘라벨 3기")
+                setLabel21(`<img src="./pics/3weapon.png" alt="weapon" class="weapon2" />`)
+                setLabel22(`<img src="./pics/3weapon.png" alt="weapon" class="weapon2" />`)
+                break;
+            case 3:
+                setLabel2("딘라벨 4기")
+                setLabel21(``)
+                setLabel22(``)
+                break;
+            case 4:
+                setLabel2("딘라벨 8기")
+                setLabel21(``)
+                setLabel22(``)
+                break;
+            case 5:
+                setLabel2("딘라벨 9기")
+                setLabel21(`<img src="./pics/9weapon1.png" alt="weapon" class="weapon9" />`)
+                setLabel22(`<img src="./pics/9weapon2.png" alt="weapon" class="weapon9" />`)
+                break;
+            case 6:
+                setLabel2("딘라벨 15기")
+                setLabel21(`<img src="./pics/15weapon1.png" alt="weapon" class="weapon15" />`)
+                setLabel22(`<img src="./pics/15weapon2.png" alt="weapon" class="weapon15" />`)
+                break;
+            case 7:
+                setLabel2("메이플 16주년")
+                setLabel21(`<img src="./pics/16weapon.png" alt="weapon" class="weapon2" />`)
+                setLabel22(`<img src="./pics/16weapon.png" alt="weapon" class="weapon2" />`)
+                break;
+            case 8:
+                setLabel2("딘라벨 16기")
+                setLabel21(`<img src="./pics/166weapon1.png" alt="weapon" class="weapon2" />`)
+                setLabel22(`<img src="./pics/166weapon2.png" alt="weapon" class="weapon2" />`)
+                break;
+            case 9:
+                setLabel2("딘라벨 17기")
+                setLabel21(`<img src="./pics/17weapon.png" alt="weapon" class="weapon2" />`)
+                setLabel22(`<img src="./pics/17weapon.png" alt="weapon" class="weapon2" />`)
+                break;
+            case 10:
+                setLabel2("딘라벨 18기")
+                setLabel21(`<img src="./pics/18weapon1.png" alt="weapon" class="weapon2" />`)
+                setLabel22(`<img src="./pics/18weapon2.png" alt="weapon" class="weapon2" />`)
+                break;
+            case 11:
+                setLabel2("딘라벨 19기")
+                setLabel21(`<img src="./pics/19weapon.png" alt="weapon" class="weapon2" />`)
+                setLabel22(`<img src="./pics/19weapon.png" alt="weapon" class="weapon2" />`)
+                break;
+            case 12:
+                setLabel2("딘라벨 20기")
+                setLabel21(`<img src="./pics/20weapon1.png" alt="weapon" class="weapon2" />`)
+                setLabel22(`<img src="./pics/20weapon2.png" alt="weapon" class="weapon2" />`)
+                break;
+            case 13:
+                setLabel2("딘라벨 21기")
+                setLabel21(`<img src="./pics/21weapon.png" alt="weapon" class="weapon2" />`)
+                setLabel22(`<img src="./pics/21weapon.png" alt="weapon" class="weapon2" />`)
+                break;
+            case 14:
+                setLabel2("딘라벨 23기")
+                setLabel21(`<img src="./pics/23weapon1.png" alt="weapon" class="weapon2" />`)
+                setLabel22(`<img src="./pics/23weapon2.png" alt="weapon" class="weapon2" />`)
+                break;
+            default:
+                setLabel2(``)
+                setLabel21(``)
+                setLabel22(``)
+        }
+        // cloth
+        let random7 = Math.floor(Math.random() * 14) + 1
+        console.log(random7)
+        switch(random7){
+            case 1:
+                setLabel3("딘라벨 2기")
+                setLabel31(`<img src="./pics/2cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/2cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
+            case 2:
+                setLabel3("딘라벨 3기")
+                setLabel31(`<img src="./pics/3cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/3cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
+            case 3:
+                setLabel3("딘라벨 4기")
+                setLabel31(`<img src="./pics/4cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/4cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
+            case 4:
+                setLabel3("딘라벨 8기")
+                setLabel31(`<img src="./pics/8cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/8cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
+            case 5:
+                setLabel3("딘라벨 9기")
+                setLabel31(`<img src="./pics/9cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/9cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
+            case 6:
+                setLabel3("딘라벨 15기")
+                setLabel31(`<img src="./pics/15cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/15cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
+            case 7:
+                setLabel3("메이플 16주년")
+                setLabel31(`<img src="./pics/16cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/16cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
+            case 8:
+                setLabel3("딘라벨 16기")
+                setLabel31(`<img src="./pics/166cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/166cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
+            case 9:
+                setLabel3("딘라벨 17기")
+                setLabel31(`<img src="./pics/17cloth1.png" alt="cloth" class="cloth" />`)
+                setLabel32(`<img src="./pics/17cloth2.png" alt="cloth" class="cloth" />`)
+                break;
+            case 10:
+                setLabel3("딘라벨 18기")
+                setLabel31(`<img src="./pics/18cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/18cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
+            case 11:
+                setLabel3("딘라벨 19기")
+                setLabel31(`<img src="./pics/19cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/19cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
+            case 12:
+                setLabel3("딘라벨 20기")
+                setLabel31(`<img src="./pics/20cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/20cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
+            case 13:
+                setLabel3("딘라벨 21기")
+                setLabel31(`<img src="./pics/21cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/21cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
+            case 14:
+                setLabel3("딘라벨 23기")
+                setLabel31(`<img src="./pics/23cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/23cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
+            default:
+                setLabel3(``)
+                setLabel31(``)
+                setLabel32(``)
+        }
+        // shoes
+        let random8 = Math.floor(Math.random() * 14) + 1
+        console.log(random8)
+        switch(random8){
+            case 1:
+                setLabel5("딘라벨 2기")
+                setLabel51(`<img src="./pics/2shoes1.png" alt="shoes" class="shoes2" />`)
+                setLabel52(`<img src="./pics/2shoes2.png" alt="shoes" class="shoes2" />`)
+                break;
+            case 2:
+                setLabel5("딘라벨 3기")
+                setLabel51(`<img src="./pics/3shoes.png" alt="shoes" class="shoes2" />`)
+                setLabel52(`<img src="./pics/3shoes.png" alt="shoes" class="shoes2" />`)
+                break;
+            case 3:
+                setLabel5("딘라벨 4기")
+                setLabel51(``)
+                setLabel52(``)
+                break;
+            case 4:
+                setLabel5("딘라벨 8기")
+                setLabel51(`<img src="./pics/8shoes1.png" alt="shoes" class="shoes2" />`)
+                setLabel52(`<img src="./pics/8shoes2.png" alt="shoes" class="shoes2" />`)
+                break;
+            case 5:
+                setLabel5("딘라벨 9기")
+                setLabel51(`<img src="./pics/9shoes1.png" alt="shoes" class="shoes2" />`)
+                setLabel52(`<img src="./pics/9shoes2.png" alt="shoes" class="shoes2" />`)
+                break;
+            case 6:
+                setLabel5("딘라벨 15기")
+                setLabel51(`<img src="./pics/15shoes1.png" alt="shoes" class="shoes2" />`)
+                setLabel52(`<img src="./pics/15shoes2.png" alt="shoes" class="shoes2" />`)
+                break;
+            case 7:
+                setLabel5("메이플 16주년")
+                setLabel51(`<img src="./pics/16shoes.png" alt="shoes" class="shoes2" />`)
+                setLabel52(`<img src="./pics/16shoes.png" alt="shoes" class="shoes2" />`)
+                break;
+            case 8:
+                setLabel5("딘라벨 16기")
+                setLabel51(``)
+                setLabel52(``)
+                break;
+            case 9:
+                setLabel5("딘라벨 17기")
+                setLabel51(`<img src="./pics/17shoes.png" alt="shoes" class="shoes" />`)
+                setLabel52(`<img src="./pics/17shoes.png" alt="shoes" class="shoes" />`)
+                break;
+            case 10:
+                setLabel5("딘라벨 18기")
+                setLabel51(`<img src="./pics/18shoes1.png" alt="shoes" class="shoes2" />`)
+                setLabel52(`<img src="./pics/18shoes2.png" alt="shoes" class="shoes2" />`)
+                break;
+            case 11:
+                setLabel5("딘라벨 19기")
+                setLabel51(`<img src="./pics/19shoes.png" alt="shoes" class="shoes2" />`)
+                setLabel52(`<img src="./pics/19shoes.png" alt="shoes" class="shoes2" />`)
+                break;
+            case 12:
+                setLabel5("딘라벨 20기")
+                setLabel51(``)
+                setLabel52(``)
+                break;
+            case 13:
+                setLabel5("딘라벨 21기")
+                setLabel51(``)
+                setLabel52(``)
+                break;
+            case 14:
+                setLabel5("딘라벨 23기")
+                setLabel51(`<img src="./pics/23shoes1.png" alt="shoes" class="shoes2" />`)
+                setLabel52(`<img src="./pics/23shoes2.png" alt="shoes" class="shoes2" />`)
+                break;
+            default:
+                setLabel5(``)
+                setLabel51(``)
+                setLabel52(``)
+        }
+        // cape
+        let random9 = Math.floor(Math.random() * 14) + 1
+        console.log(random9)
+        switch(random9){
+            case 1:
+                setLabel6("딘라벨 2기")
+                setLabel61(`<img src="./pics/2cape.png" alt="cape" class="cape2" />`)
+                setLabel62(`<img src="./pics/2cape.png" alt="cape" class="cape2" />`)
+                break;
+            case 2:
+                setLabel6("딘라벨 3기")
+                setLabel61(``)
+                setLabel62(``)
+                break;
+            case 3:
+                setLabel6("딘라벨 4기")
+                setLabel61(``)
+                setLabel62(``)
+                break;
+            case 4:
+                setLabel6("딘라벨 8기")
+                setLabel61(``)
+                setLabel62(``)
+                break;
+            case 5:
+                setLabel6("딘라벨 9기")
+                setLabel61(`<img src="./pics/9cape.png" alt="cape" class="cape19" />`)
+                setLabel62(`<img src="./pics/9cape.png" alt="cape" class="cape19" />`)
+                break;
+            case 6:
+                setLabel6("딘라벨 15기")
+                setLabel61(``)
+                setLabel62(``)
+                break;
+            case 7:
+                setLabel6("메이플 16주년")
+                setLabel61(`<img src="./pics/16cape.png" alt="cape" class="cape16" />`)
+                setLabel62(`<img src="./pics/16cape.png" alt="cape" class="cape16" />`)
+                break;
+            case 8:
+                setLabel6("메이플 16주년")
+                setLabel61(`<img src="./pics/166cape.png" alt="cape" class="cape166" />`)
+                setLabel62(`<img src="./pics/166cape.png" alt="cape" class="cape166" />`)
+                break;
+            case 9:
+                setLabel6("딘라벨 17기")
+                setLabel61(`<img src="./pics/17cape.png" alt="cape" class="cape" />`)
+                setLabel62(`<img src="./pics/17cape.png" alt="cape" class="cape" />`)
+                break;
+            case 10:
+                setLabel6("딘라벨 18기")
+                setLabel61(`<img src="./pics/18cape1.png" alt="cape" class="cape18" />`)
+                setLabel62(`<img src="./pics/18cape2.png" alt="cape" class="cape18" />`)
+                break;
+            case 11:
+                setLabel6("딘라벨 19기")
+                setLabel61(`<img src="./pics/19cape.png" alt="cape" class="cape19" />`)
+                setLabel62(`<img src="./pics/19cape.png" alt="cape" class="cape19" />`)
+                break;
+            case 12:
+                setLabel6("딘라벨 20기")
+                setLabel61(`<img src="./pics/20cape1.png" alt="cape" class="cape20" />`)
+                setLabel62(`<img src="./pics/20cape2.png" alt="cape" class="cape20" />`)
+                break;
+            case 13:
+                setLabel6("딘라벨 21기")
+                setLabel61(`<img src="./pics/21cape1.png" alt="cape" class="cape21" />`)
+                setLabel62(`<img src="./pics/21cape2.png" alt="cape" class="cape21" />`)
+                break;
+            case 14:
+                setLabel6("딘라벨 23기")
+                setLabel61(``)
+                setLabel62(``)
+                break;
+            default:
+                setLabel6(``)
+                setLabel61(``)
+                setLabel62(``)
+        }
     }
 
     return (
@@ -1533,7 +1938,7 @@ const Body = () => {
                         </div>
                     </div>
                 </ul>
-                <span onClick={saveimage1}>사진 저장하기</span>
+                <span onClick={getrandom}>랜덤 코디</span>
             </div>
         </div>
     )

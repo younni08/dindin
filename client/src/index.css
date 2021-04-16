@@ -304,6 +304,12 @@ body {
   right:12px;
   z-index:0;
 }
+.showroom img.cape18{
+  position:absolute;
+  /* top:-15px; */
+  /* right:-5px; */
+  z-index:0;
+}
 .showroom img.cape19{
   position:absolute;
   top:-15px;
