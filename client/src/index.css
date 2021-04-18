@@ -631,3 +631,19 @@ input.check_input_reverse:checked + label:before{
 input.check_input_reverse:checked + label:after{
   left:70px;
 }
+.update_div{
+  display:flex;
+  justify-content: center;
+}
+.update_div > div{
+  display: flex;
+  width: 100%;
+  max-width: 360px;
+  justify-content: flex-end;
+  align-items: center;
+  margin: -15px 50px 5px 0px;
+}
+.update_div > div span{
+  font-size:0.8em;
+  color:#7f7f7f;
+}

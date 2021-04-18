@@ -1170,7 +1170,11 @@ const Body = () => {
                             <img src="./pics/blog.png" alt="youtube" />
                             <span>자료나 이미지 올리는 공간입니다 :)</span>
                         </div>
-
+                    </div>
+                </div>
+                <div className="update_div">
+                    <div>
+                        <span>버전: 1.0.0</span>
                     </div>
                 </div>
                 <div className="temp_toggle">
