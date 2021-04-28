@@ -164,6 +164,11 @@ const Body = () => {
                 setLabel11(`<img src="./pics/9hat1.png" alt="hat" class="hat16" />`)
                 setLabel12(`<img src="./pics/9hat2.png" alt="hat" class="hat16" />`)
                 break;
+            case "14hat":
+                setLabel1("딘라벨 14기")
+                setLabel11(`<img src="./pics/14hat1.png" alt="hat" class="hat14" />`)
+                setLabel12(`<img src="./pics/14hat2.png" alt="hat" class="hat14" />`)
+                break;
             case "15hat":
                 setLabel1("딘라벨 15기")
                 setLabel11(`<img src="./pics/15hat1.png" alt="hat" class="hat16" />`)
@@ -194,7 +199,7 @@ const Body = () => {
                 setLabel11(`<img src="./pics/19hat.png" alt="hat" class="hat19" />`)
                 setLabel12(`<img src="./pics/19hat.png" alt="hat" class="hat19" />`)
                 break;
-                case "20hat":
+            case "20hat":
                 setLabel1("딘라벨 20기")
                 setLabel11(`<img src="./pics/20hat1.png" alt="hat" class="hat20" />`)
                 setLabel12(`<img src="./pics/20hat2.png" alt="hat" class="hat20" />`)
@@ -249,6 +254,11 @@ const Body = () => {
                 setLabel21(`<img src="./pics/9weapon1.png" alt="weapon" class="weapon9" />`)
                 setLabel22(`<img src="./pics/9weapon2.png" alt="weapon" class="weapon9" />`)
                 break;
+            case "14weapon":
+                setLabel2("딘라벨 14기")
+                setLabel21(`<img src="./pics/14weapon1.png" alt="weapon" class="weapon2" /><img src="./pics/14weaponeffect.png" alt="weapon" class="weaponeffect14" />`)
+                setLabel22(`<img src="./pics/14weapon2.png" alt="weapon" class="weapon2" /><img src="./pics/14weaponeffect.png" alt="weapon" class="weaponeffect14" />`)
+                break;
             case "15weapon":
                 setLabel2("딘라벨 15기")
                 setLabel21(`<img src="./pics/15weapon1.png" alt="weapon" class="weapon15" />`)
@@ -294,6 +304,16 @@ const Body = () => {
                 setLabel21(`<img src="./pics/23weapon1.png" alt="weapon" class="weapon2" />`)
                 setLabel22(`<img src="./pics/23weapon2.png" alt="weapon" class="weapon2" />`)
                 break;
+            case "btsweapon1":
+                setLabel2("딘라벨 BTS")
+                setLabel21(`<img src="./pics/bts1.png" alt="weapon" class="weapon14" />`)
+                setLabel22(`<img src="./pics/bts1.png" alt="weapon" class="weapon14" />`)
+                break;
+            case "btsweapon2":
+                setLabel2("딘라벨 BTS2")
+                setLabel21(`<img src="./pics/bts2.png" alt="weapon" class="bts2" />`)
+                setLabel22(`<img src="./pics/bts2.png" alt="weapon" class="bts2" />`)
+                break;
             case "weapon":
                 setLabel2("")
                 setLabel21(``)
@@ -334,6 +354,11 @@ const Body = () => {
                 setLabel3("딘라벨 9기")
                 setLabel31(`<img src="./pics/9cloth1.png" alt="cloth" class="cloth2" />`)
                 setLabel32(`<img src="./pics/9cloth2.png" alt="cloth" class="cloth2" />`)
+                break;
+            case "14cloth":
+                setLabel3("딘라벨 14기")
+                setLabel31(`<img src="./pics/14cloth1.png" alt="cloth" class="cloth2" />`)
+                setLabel32(`<img src="./pics/14cloth2.png" alt="cloth" class="cloth2" />`)
                 break;
             case "15cloth":
                 setLabel3("딘라벨 15기")
@@ -420,6 +445,11 @@ const Body = () => {
                 setLabel51(`<img src="./pics/9shoes1.png" alt="shoes" class="shoes2" />`)
                 setLabel52(`<img src="./pics/9shoes2.png" alt="shoes" class="shoes2" />`)
                 break;
+            case "14shoes":
+                setLabel5("딘라벨 14기")
+                setLabel51(`<img src="./pics/14shoes1.png" alt="shoes" class="shoes2" />`)
+                setLabel52(`<img src="./pics/14shoes2.png" alt="shoes" class="shoes2" />`)
+                break;
             case "15shoes":
                 setLabel5("딘라벨 15기")
                 setLabel51(`<img src="./pics/15shoes1.png" alt="shoes" class="shoes2" />`)
@@ -504,6 +534,11 @@ const Body = () => {
                 setLabel6("딘라벨 9기")
                 setLabel61(`<img src="./pics/9cape.png" alt="cape" class="cape19" />`)
                 setLabel62(`<img src="./pics/9cape.png" alt="cape" class="cape19" />`)
+                break;
+            case "14cape":
+                setLabel6("메이플 14기")
+                setLabel61(`<img src="./pics/14cape.png" alt="cape" class="cape14" />`)
+                setLabel62(`<img src="./pics/14cape.png" alt="cape" class="cape14" />`)
                 break;
             case "15cape":
                 setLabel6("딘라벨 15기")
@@ -1174,7 +1209,7 @@ const Body = () => {
                 </div>
                 <div className="update_div">
                     <div>
-                        <span>버전: 1.0.0</span>
+                        <span>업데이트: 2021.04.28</span>
                     </div>
                 </div>
                 <div className="temp_toggle">
@@ -1430,6 +1465,12 @@ const Body = () => {
                                 </div>
                                 <span>9기</span>
                             </div>
+                            <div className="minibox" onClick={getId1} id="14hat">
+                                <div>
+                                    <img src="./pics/14hat1.png" alt="dinlabel_14" className="hat" />
+                                </div>
+                                <span>14기</span>
+                            </div>
                             <div className="minibox" onClick={getId1} id="15hat">
                                 <div>
                                     <img src="./pics/15hat1.png" alt="dinlabel_15" className="hat" />
@@ -1525,6 +1566,12 @@ const Body = () => {
                                 </div>
                                 <span>9기</span>
                             </div>
+                            <div className="minibox" onClick={getId2} id="14weapon">
+                                <div>
+                                    <img src="./pics/14weapon1.png" alt="dinlabel_14"/>
+                                </div>
+                                <span>14기</span>
+                            </div>
                             <div className="minibox" onClick={getId2} id="15weapon">
                                 <div>
                                     <img src="./pics/15weapon1.png" alt="dinlabel_15"/>
@@ -1579,6 +1626,18 @@ const Body = () => {
                                 </div>
                                 <span>23기</span>
                             </div>
+                            <div className="minibox" onClick={getId2} id="btsweapon1">
+                                <div>
+                                    <img src="./pics/bts1.png" alt="dinlabel_bts1" />
+                                </div>
+                                <span>BTS 무기</span>
+                            </div>
+                            <div className="minibox" onClick={getId2} id="btsweapon2">
+                                <div>
+                                    <img src="./pics/bts2.png" alt="dinlabel_bts2" />
+                                </div>
+                                <span>BTS 무기</span>
+                            </div>
                             <div className="minibox" onClick={getId2} id="weapon">
                                 <div>
                                 </div>
@@ -1624,6 +1683,13 @@ const Body = () => {
                                     <img src="./pics/9cloth2.png" alt="dinlabel_9" className="two" />
                                 </div>
                                 <span>9기</span>
+                            </div>
+                            <div className="minibox" onClick={getId3} id="14cloth">
+                                <div>
+                                    <img src="./pics/14cloth1.png" alt="dinlabel_14" className="two" />
+                                    <img src="./pics/14cloth2.png" alt="dinlabel_14" className="two" />
+                                </div>
+                                <span>14기</span>
                             </div>
                             <div className="minibox" onClick={getId3} id="15cloth">
                                 <div>
@@ -1729,9 +1795,15 @@ const Body = () => {
                                 </div>
                                 <span>9기</span>
                             </div>
+                            <div className="minibox" onClick={getId5} id="14shoes">
+                                <div>
+                                    <img src="./pics/14shoes1.png" alt="dinlabel_14" className="small" />
+                                </div>
+                                <span>14기</span>
+                            </div>
                             <div className="minibox" onClick={getId5} id="15shoes">
                                 <div>
-                                    <img src="./pics/15shoes1.png" alt="dinlabel_16" className="small" />
+                                    <img src="./pics/15shoes1.png" alt="dinlabel_15" className="small" />
                                 </div>
                                 <span>15기 (얼장)</span>
                             </div>
@@ -1824,6 +1896,12 @@ const Body = () => {
                                     <img src="./pics/9cape.png" alt="dinlabel_9" />
                                 </div>
                                 <span>9기</span>
+                            </div>
+                            <div className="minibox" onClick={getId6} id="14cape">
+                                <div>
+                                    <img src="./pics/14cape.png" alt="dinlabel_14" />
+                                </div>
+                                <span>14기</span>
                             </div>
                             <div className="minibox" onClick={getId6} id="15cape">
                                 <div>
